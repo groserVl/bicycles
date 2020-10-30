@@ -16,6 +16,8 @@ var svgstore = require("gulp-svgstore")
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var concat = require('gulp-concat');
+var babel = require('gulp-babel');
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -23,10 +25,31 @@ gulp.task("css", function () {
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([ autoprefixer() ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
+});
+
+gulp.task("libraries", function() {
+  return gulp.src("source/js/lib/*.js")
+    .pipe(concat('vendor.js'))
+    .pipe(babel({
+      presets: ['@babel/env']
+    }))
+    .pipe(gulp.dest('./build/js'))
+    .pipe(server.stream());
+});
+
+gulp.task("scripts", function() {
+  return gulp.src("source/js/*.js")
+    .pipe(concat('main.js'))
+    .pipe(babel({
+      presets: ['@babel/env']
+    }))
+    .pipe(gulp.dest('./build/js'))
     .pipe(server.stream());
 });
 
@@ -42,6 +65,8 @@ gulp.task("server", function () {
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
+  gulp.watch("source/js/*.js", gulp.series("scripts", "refresh"));
+  gulp.watch("source/js/lib/*.js", gulp.series("libraries", "refresh"));
 });
 
 gulp.task("refresh", function (done) {
@@ -86,7 +111,7 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
+    // "source/js/**",
     "source//*.ico"
     ], {
       base: "source"
@@ -104,5 +129,5 @@ gulp.task("pixel", function () {
   .pipe(gulp.dest("build/pixel"));
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "libraries", "scripts", "sprite", "html"));
 gulp.task("start", gulp.series("build", "pixel", "server"));
