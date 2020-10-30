@@ -4,10 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Moon</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <!-- Pixel Glass -->
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* Desktop layout by default */
+    background-image: url("pixel/desktop.jpg");
+  }
+  /* Tablet */
+  /* @media ( max-width: 1023px ) { */
+  @media ( max-width: 768px ) {
+    HTML {
+      /* Tablet layout */
+      background-image: url("pixel/tablet.jpg");
+    }
+  }
+  /* Mobile */
+  /* @media ( max-width: 767px ) { */
+  @media ( max-width: 320px ) {
+    HTML {
+      /* Mobile layout */
+      background-image: url("pixel/mobile.jpg");
+    }
+  }
+</style>
+
+
+<link href="../pixel/styles.css" rel="stylesheet">
+<script src="../pixel/script.js"></script>
 </head>
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+  <h1>Привет</h1>
+
 </body>
 </html>

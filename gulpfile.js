@@ -98,5 +98,11 @@ gulp.task("clean", function () {
   return del("build");
 });
 
+gulp.task("pixel", function () {
+  return gulp.src(["node_modules/pixel-glass/*.{css,js}",
+  "source/pixel-glass/*.jpg"])
+  .pipe(gulp.dest("build/pixel"));
+});
+
 gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
-gulp.task("start", gulp.series("build", "server"));
+gulp.task("start", gulp.series("build", "pixel", "server"));
