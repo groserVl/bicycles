@@ -391,6 +391,9 @@ body {
   width: 100px;
   height: 100px; }
 
+.header {
+  width: 100%; }
+
 .menu {
   margin: 0;
   padding-left: 0;
@@ -401,9 +404,6 @@ body {
   font-size: 16px;
   line-height: 32px;
   color: rgba(255, 255, 255, 0.7); }
-
-.promo {
-  background: #000; }
 
 .promo__title {
   font-weight: 700;
