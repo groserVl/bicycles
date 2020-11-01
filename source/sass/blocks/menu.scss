@@ -1,0 +1,10 @@
+.menu {
+  @include list-reset;
+}
+
+.menu__list-link {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba($bg, 0.7);
+}

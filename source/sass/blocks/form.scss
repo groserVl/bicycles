@@ -1,0 +1,19 @@
+.form__title {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  color: $bg;
+}
+
+.form input::placeholder {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgba(#1c1c1c, 0.5);
+}
+
+.form button {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+}

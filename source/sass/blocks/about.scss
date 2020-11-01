@@ -1,0 +1,7 @@
+.about__title {
+  @include h2(50px);
+}
+
+.about__list {
+  @include list-reset;
+}

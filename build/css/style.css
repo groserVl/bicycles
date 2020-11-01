@@ -390,3 +390,102 @@ body {
           box-shadow: inset 0 0 0 2px chocolate;
   width: 100px;
   height: 100px; }
+
+.menu {
+  margin: 0;
+  padding-left: 0;
+  list-style: none; }
+
+.menu__list-link {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.7); }
+
+.promo {
+  background: #000; }
+
+.promo__title {
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 64px;
+  color: #ffffff; }
+
+.promo__text {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.8); }
+
+.form__title {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  color: #ffffff; }
+
+.form input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgba(28, 28, 28, 0.5); }
+
+.form input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgba(28, 28, 28, 0.5); }
+
+.form input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgba(28, 28, 28, 0.5); }
+
+.form input::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgba(28, 28, 28, 0.5); }
+
+.form input::placeholder {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgba(28, 28, 28, 0.5); }
+
+.form button {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px; }
+
+.about__title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  color: #1f1f1f;
+  text-align: center; }
+
+.about__list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none; }
+
+.kinds__title {
+  margin: 0;
+  margin-bottom: 60px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  color: #1f1f1f;
+  text-align: center; }
+
+.kinds__list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none; }
+
+.card h3 {
+  margin: 0;
+  font-weight: 600; }

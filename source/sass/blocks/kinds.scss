@@ -1,0 +1,7 @@
+.kinds__title {
+  @include h2(60px);
+}
+
+.kinds__list {
+  @include list-reset;
+}
