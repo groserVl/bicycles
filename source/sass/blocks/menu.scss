@@ -1,5 +1,16 @@
 .menu {
   @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: -47px;
+  margin-right: -47px;
+  padding-bottom: 7px;
+}
+
+.menu__list-item {
+  margin: 0 67px;
 }
 
 .menu__list-link {

@@ -373,6 +373,7 @@ body {
 
 body {
   position: relative;
+  max-width: 1440px;
   min-width: 320px;
   margin: 0 auto;
   padding: 0;
@@ -384,20 +385,85 @@ body {
   word-wrap: normal;
   background-color: #ffffff; }
 
-.box {
-  background: rgba(210, 105, 30, 0.2);
-  -webkit-box-shadow: inset 0 0 0 2px chocolate;
-          box-shadow: inset 0 0 0 2px chocolate;
-  width: 100px;
-  height: 100px; }
-
 .header {
-  width: 100%; }
+  position: absolute;
+  width: 100%;
+  padding-top: 18px; }
+
+.header__logo {
+  position: absolute;
+  top: 295px;
+  left: -5px; }
+
+.header__logo img {
+  display: block; }
+
+.header__nav {
+  position: relative;
+  max-width: 874px;
+  margin: 0 auto;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2); }
+
+.header__toggle {
+  display: none; }
+
+@media (max-width: 1023px) {
+  .header {
+    padding: 0; }
+  .header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 100%;
+    border: none; }
+  ul.header__menu {
+    display: none; }
+  .header__logo {
+    position: static;
+    padding-top: 25px;
+    padding-left: 21px;
+    padding-bottom: 5px; }
+  .header__toggle {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: none;
+    background-color: #0ad9c6;
+    cursor: pointer; }
+    .header__toggle::before {
+      content: "";
+      position: absolute;
+      top: 18px;
+      left: 14px;
+      width: 22.5px;
+      height: 2px;
+      background-color: #000000;
+      -webkit-box-shadow: 0 6px 0 0.1px #000000, 0 12px 0 0.1px #000000;
+              box-shadow: 0 6px 0 0.1px #000000, 0 12px 0 0.1px #000000; } }
 
 .menu {
   margin: 0;
   padding-left: 0;
-  list-style: none; }
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -47px;
+  margin-right: -47px;
+  padding-bottom: 7px; }
+
+.menu__list-item {
+  margin: 0 67px; }
 
 .menu__list-link {
   font-weight: 300;
@@ -405,23 +471,82 @@ body {
   line-height: 32px;
   color: rgba(255, 255, 255, 0.7); }
 
+.promo {
+  padding-top: 306px;
+  padding-bottom: 240px;
+  background-image: url("../img/bg-promo1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: #1e1e1e; }
+
+.promo__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 880px;
+  margin: 0 auto; }
+
+.promo__wrap-text {
+  max-width: 380px; }
+
 .promo__title {
+  margin-top: 63px;
+  margin-bottom: 25px;
   font-weight: 700;
   font-size: 46px;
   line-height: 64px;
   color: #ffffff; }
 
 .promo__text {
+  margin: 0;
   font-weight: 300;
   font-size: 20px;
   line-height: 32px;
   color: rgba(255, 255, 255, 0.8); }
 
+@media (max-width: 1023px) {
+  .promo {
+    padding-top: 17.5%;
+    background-image: url("../img/bg-promo-tablet1x.jpg");
+    background-color: transparent;
+    background-size: contain; }
+  .promo__wrap {
+    display: block; }
+  .promo__wrap-text {
+    max-width: 410px;
+    margin: 0 auto;
+    text-align: center; }
+  .promo__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 42px; }
+  .promo__text {
+    font-size: 18px; }
+  .promo__wrap-form {
+    margin: 19.5% auto; } }
+
+.form {
+  width: 327px; }
+
 .form__title {
+  margin: 18px 0 18px;
   font-weight: 600;
   font-size: 17px;
   line-height: 28px;
-  color: #ffffff; }
+  color: #ffffff;
+  text-align: center; }
+
+.form input {
+  width: 100%;
+  margin-bottom: 19px;
+  padding: 12px 28px;
+  border: none;
+  border: 1px solid #c9ccd4;
+  border-radius: 4px; }
 
 .form input::-webkit-input-placeholder {
   font-weight: 400;
@@ -454,9 +579,27 @@ body {
   color: rgba(28, 28, 28, 0.5); }
 
 .form button {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-weight: 600;
   font-size: 15px;
-  line-height: 21px; }
+  line-height: 21px;
+  background: none;
+  border: none;
+  background-color: #0ad9c6;
+  border-radius: 6px; }
+
+@media (max-width: 1023px) {
+  .form {
+    width: 323px; }
+  .form__title {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #000000;
+    letter-spacing: -0.3px; }
+  .form input {
+    padding: 9px 21px 13px; } }
 
 .about__title {
   margin: 0;

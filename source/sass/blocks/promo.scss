@@ -1,4 +1,29 @@
+.promo {
+  padding-top: 306px;
+  padding-bottom: 240px;
+
+  background-image: url("../img/bg-promo1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: #1e1e1e;
+}
+
+.promo__wrap {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.promo__wrap-text {
+  max-width: 380px;
+}
+
 .promo__title {
+  margin-top: 63px;
+  margin-bottom: 25px;
+
   font-weight: 700;
   font-size: 46px;
   line-height: 64px;
@@ -6,8 +31,48 @@
 }
 
 .promo__text {
+  margin: 0;
+
   font-weight: 300;
   font-size: 20px;
   line-height: 32px;
   color: rgba($bg, 0.8);
+}
+
+@media (max-width: 1023px) {
+  .promo {
+    padding-top: 17.5%;
+
+    background-image: url("../img/bg-promo-tablet1x.jpg");
+    background-color: transparent;
+
+    background-size: contain;
+  }
+
+  .promo__wrap {
+    display: block;
+  }
+
+  .promo__wrap-text {
+    max-width: 410px;
+    margin: 0 auto;
+
+    text-align: center;
+  }
+
+  .promo__title {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .promo__text {
+    font-size: 18px;
+  }
+
+  .promo__wrap-form {
+    margin: 19.5% auto;
+  }
 }

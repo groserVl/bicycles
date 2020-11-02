@@ -1,8 +1,24 @@
+.form {
+  width: 327px;
+}
+
 .form__title {
+  margin: 18px 0 18px;
+
   font-weight: 600;
   font-size: 17px;
   line-height: 28px;
   color: $bg;
+  text-align: center;
+}
+
+.form input {
+  width: 100%;
+  margin-bottom: 19px;
+  padding: 12px 28px;
+
+  border: 1px solid #c9ccd4;
+  border-radius: 4px;
 }
 
 .form input::placeholder {
@@ -13,7 +29,34 @@
 }
 
 .form button {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
   font-weight: 600;
   font-size: 15px;
   line-height: 21px;
+
+  background: none;
+  border: none;
+  background-color: $green;
+  border-radius: 6px;
+}
+
+@media (max-width: 1023px) {
+  .form {
+    width: 323px;
+  }
+
+  .form__title {
+    margin-bottom: 30px;
+
+    font-size: 18px;
+    color: $text;
+    letter-spacing: -0.3px;
+  }
+
+  .form input {
+    padding: 9px 21px 13px;
+  }
 }
