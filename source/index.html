@@ -16,19 +16,19 @@
     background-repeat: no-repeat;
     background-position:  50% 0;
     /* Desktop layout by default */
-    background-image: url("pixel/desktop.jpg");
+    /* background-image: url("pixel/desktop.jpg"); */
   }
   /* Tablet */
   /* @media ( max-width: 1023px ) { */
   @media ( min-width: 768px) and (max-width: 1023px) {
     HTML {
       /* Tablet layout */
-      /* background-image: url("pixel/tablet.jpg"); */
+      background-image: url("pixel/tablet.jpg");
     }
   }
   /* Mobile */
   /* @media ( max-width: 767px ) { */
-  @media ( max-width: 320px ) {
+  @media ( max-width: 767px ) {
     HTML {
       /* Mobile layout */
       background-image: url("pixel/mobile.jpg");
@@ -95,10 +95,18 @@
     <section class="about">
       <h2 class="about__title">Несколько фактов о нас</h2>
       <ul class="about__list">
-        <li class="about__item">Самый широкий выбор велосипедов!</li>
-        <li class="about__item">Доставка велосипедов по всей России!</li>
-        <li class="about__item">Большой выбор крутых аксессуаров!</li>
-        <li class="about__item">Профессиональные консультации!</li>
+        <li class="about__item">
+          <p>Самый широкий выбор велосипедов!</p>
+        </li>
+        <li class="about__item">
+          <p>Доставка велосипедов по всей России!</p>
+        </li>
+        <li class="about__item">
+          <p>Большой выбор крутых аксессуаров!</p>
+        </li>
+        <li class="about__item">
+          <p>Профессиональные консультации!</p>
+        </li>
       </ul>
     </section>
 
@@ -108,21 +116,39 @@
         <ul class="kinds__list">
           <li class="kinds__item">
             <article class="card">
-              <img src="img/bicycle-1-desktop1x.png" alt="Дорожный велосипед">
+              <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/bicycle-1-tablet1x.webp 1x, img/bicycle-1-tablet2x.webp 2x">
+                <source type="image/webp" srcset="img/bicycle-1-desktop1x.webp 1x, img/bicycle-1-desktop2x.webp 2x">
+
+                <source media="(max-width: 1023px)" srcset="img/bicycle-1-tablet1x.png, img/bicycle-1-tablet2x.png 2x">
+                <img src="img/bicycle-1-desktop1x.png" srcset="img/bicycle-1-desktop2x.png 2x" alt="Дорожный велосипед">
+              </picture>
               <h3>Дорожный велосипед</h3>
             </article>
           </li>
 
           <li class="kinds__item">
             <article class="card">
-              <img src="img/bicycle-2-desktop1x.png" alt="Горный велосипед">
+              <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/bicycle-2-tablet1x.webp 1x, img/bicycle-2-tablet2x.webp 2x">
+                <source type="image/webp" srcset="img/bicycle-2-desktop1x.webp 1x, img/bicycle-2-desktop2x.webp 2x">
+
+                <source media="(max-width: 1023px)" srcset="img/bicycle-2-tablet1x.png, img/bicycle-2-tablet2x.png 2x">
+                <img src="img/bicycle-2-desktop1x.png" srcset="img/bicycle-2-desktop2x.png 2x" alt="Горный велосипед">
+              </picture>
               <h3>Горный велосипед</h3>
             </article>
           </li>
 
           <li class="kinds__item">
             <article class="card">
-              <img src="img/bicycle-3-desktop1x.png" alt="Детский велосипед">
+              <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/bicycle-3-tablet1x.webp 1x, img/bicycle-3-tablet2x.webp 2x">
+                <source type="image/webp" srcset="img/bicycle-3-desktop1x.webp 1x, img/bicycle-3-desktop2x.webp 2x">
+
+                <source media="(max-width: 1023px)" srcset="img/bicycle-3-tablet1x.png, img/bicycle-3-tablet2x.png 2x">
+                <img src="img/bicycle-3-desktop1x.png" srcset="img/bicycle-3-desktop2x.png 2x" alt="Детский велосипед">
+              </picture>
               <h3>Детский велосипед</h3>
             </article>
           </li>
@@ -132,10 +158,18 @@
 
     <section class="video">
       <h2 class="video__title">Видео про велосипеды</h2>
-      <p class="video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
+      <p class="video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
       <div class="video__item video-content">
-        <img src="img/video-desktop1x.jpg" alt="Видеозаставка про велосипеды">
-        <button type="button">
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/video-mobile1x.webp 1x, img/video-mobile2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1023px)" srcset="img/video-tablet1x.webp 1x, img/video-tablet2x.webp 2x">
+          <source type="image/webp" srcset="img/video-desktop1x.webp 1x, img/video-desktop2x.webp 2x">
+
+          <source media="(max-width: 767px)" srcset="img/video-mobile1x.jpg, img/video-mobile2x.jpg 2x">
+          <source media="(max-width: 1023px)" srcset="img/video-tablet1x.jpg, img/video-tablet2x.jpg 2x">
+          <img src="img/video-desktop1x.jpg" srcset="img/video-desktop2x.jpg 2x" alt="Видеозаставка про велосипеды">
+        </picture>
+        <button class="video-content__button" type="button">
           <span class="visually-hidden">Включить видео</span>
         </button>
       </div>
@@ -145,7 +179,15 @@
       <h2 class="contacts__title">Как нас найти?</h2>
       <p class="contacts__text">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
       <div class="contacts__wrap-img">
-        <img src="img/map-desktop1x.jpg" alt="Карта нашего местонахождения">
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/map-mobile1x.webp 1x, img/map-mobile2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1023px)" srcset="img/map-tablet1x.webp 1x, img/map-tablet2x.webp 2x">
+          <source type="image/webp" srcset="img/map-desktop1x.webp 1x, img/map-desktop2x.webp 2x">
+
+          <source media="(max-width: 767px)" srcset="img/map-mobile1x.jpg, img/map-mobile2x.jpg 2x">
+          <source media="(max-width: 1023px)" srcset="img/map-tablet1x.jpg, img/map-tablet2x.jpg 2x">
+          <img src="img/map-desktop1x.jpg" srcset="img/map-desktop2x.jpg 2x" alt="Карта нашего местонахождения">
+        </picture>
       </div>
     </section>
   </main>

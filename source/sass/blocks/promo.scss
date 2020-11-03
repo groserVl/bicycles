@@ -42,6 +42,7 @@
 @media (max-width: 1023px) {
   .promo {
     padding-top: 17.5%;
+    padding-bottom: 0;
 
     background-image: url("../img/bg-promo-tablet1x.jpg");
     background-color: transparent;
@@ -73,6 +74,6 @@
   }
 
   .promo__wrap-form {
-    margin: 19.5% auto;
+    margin: 19.5% auto 0;
   }
 }

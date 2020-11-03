@@ -1,13 +1,15 @@
 .about {
-  max-width: 1166px;
+  max-width: 1196px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 150px;
   padding-bottom: 150px;
+
+  overflow: hidden;
 }
 
 .about__title {
-  @include h2(50px);
+  @include h2(27px);
 }
 
 .about__list {
@@ -17,6 +19,8 @@
   flex-wrap: wrap;
   margin-left: -19px;
   margin-right: -19px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .about__item {
@@ -25,4 +29,35 @@
   padding-top: 52px;
 
   text-align: center;
+}
+
+@media (max-width: 1023px) {
+  .about {
+    padding-top: 70px;
+    padding-bottom: 45px;
+  }
+
+  .about__title {
+    margin-bottom: 8px;
+
+    font-size: 24px;
+    line-height: 41px;
+  }
+
+  .about__list {
+    padding: 0 100px;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .about__item {
+    margin: 0 15px;
+    width: calc(50% - 30px);
+  }
+
+  .about__item p {
+    max-width: 263px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 249px;
+  padding-top: 103px;
 }
 
 .contacts__title {
@@ -28,4 +28,27 @@
 
 .contacts__wrap-img img {
   display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1023px) {
+  .contacts {
+    padding-top: 70px;
+  }
+
+  .contacts__title {
+    margin-bottom: 20px;
+
+    font-size: 24px;
+  }
+
+  .contacts__text {
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  .contacts__wrap-img {
+    width: 91%;
+  }
 }

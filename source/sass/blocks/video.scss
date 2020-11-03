@@ -1,10 +1,7 @@
 .video {
-  position: relative;
-
   padding-top: 122px;
-  padding-bottom: 480px;
 
-  background-color: #131314;
+  background-image: linear-gradient(to bottom, #131314 706px, transparent 100px);
 }
 
 .video__title {
@@ -20,7 +17,7 @@
 
 .video__text {
   width: 340px;
-  margin: 0 auto;
+  margin: 0 auto 55px;
 
   font-weight: 300;
   font-size: 16px;
@@ -30,11 +27,24 @@
 }
 
 .video__item {
-  position: absolute;
-  top: 285px;
-  left: 0;
-  right: 0;
-
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (max-width: 1023px) {
+  .video {
+    padding-top: 70px;
+
+    background-image: linear-gradient(to bottom, #131314 413px, transparent 85px);
+  }
+
+  .video__title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .video__text {
+    width: 430px;
+    margin-bottom: 40px;
+  }
 }

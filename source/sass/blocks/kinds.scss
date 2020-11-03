@@ -1,5 +1,5 @@
 .kinds {
-  padding-top: 152px;
+  padding-top: 130px;
   padding-bottom: 147px;
 
   background-color: #f5f7f9;
@@ -27,15 +27,127 @@
 }
 
 .kinds__item {
+  position: relative;
+  z-index: 10;
+
   width: calc(100% / 3 - 50px);
   margin-left: 25px;
   margin-right: 25px;
 
   &:first-child {
     margin-top: 10px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 157px;
+      left: -60px;
+      z-index: -1;
+
+      width: 180px;
+      height: 180px;
+
+      border-radius: 50%;
+      border: 25px solid $green;
+    }
   }
 
   &:nth-child(2) {
     margin-top: 40px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+
+      width: 47px;
+      height: 47px;
+
+      border: 8px solid $green;
+    }
+
+    &::before {
+      top: -18px;
+      left: -18px;
+    }
+
+    &::after {
+      bottom: 30px;
+      right: -25px;
+    }
+  }
+
+  &:nth-child(3) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -30px;
+      right: -35px;
+
+      width: 95px;
+      height: 95px;
+
+      border-radius: 50%;
+      border: 17px solid $green;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .kinds {
+    padding-top: 53px;
+    padding-bottom: 20px;
+  }
+
+  .kinds__title {
+    margin-bottom: 30px;
+
+    font-size: 24px;
+    line-height: 41px;
+  }
+
+  .kinds__list {
+    padding-left: 9.5%;
+    padding-right: 9.5%;
+  }
+
+  .kinds__list .kinds__item {
+    width: calc(50% - 50px);
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+
+  .kinds__item {
+    &:first-child::before {
+      top: 200px;
+      left: -38px;
+
+      width: 127px;
+      height: 127px;
+
+      border-width: 18px;
+    }
+
+    &:nth-child(2)::before,
+    &:nth-child(2)::after {
+      display: none;
+    }
+
+    &:nth-child(3)::before {
+      top: -20px;
+      right: -26px;
+
+      width: 68px;
+      height: 68px;
+
+      border-width: 13px;
+    }
+  }
+
+  .kinds__item img {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 }
