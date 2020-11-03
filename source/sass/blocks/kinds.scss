@@ -1,7 +1,41 @@
+.kinds {
+  padding-top: 152px;
+  padding-bottom: 147px;
+
+  background-color: #f5f7f9;
+  overflow: hidden;
+}
+
+.kinds__wrap-list {
+  max-width: 1166px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .kinds__title {
-  @include h2(60px);
+  @include h2(50px);
 }
 
 .kinds__list {
   @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: -25px;
+  margin-right: -25px;
+}
+
+.kinds__item {
+  width: calc(100% / 3 - 50px);
+  margin-left: 25px;
+  margin-right: 25px;
+
+  &:first-child {
+    margin-top: 10px;
+  }
+
+  &:nth-child(2) {
+    margin-top: 40px;
+  }
 }

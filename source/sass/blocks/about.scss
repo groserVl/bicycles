@@ -1,7 +1,28 @@
+.about {
+  max-width: 1166px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
 .about__title {
   @include h2(50px);
 }
 
 .about__list {
   @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -19px;
+  margin-right: -19px;
+}
+
+.about__item {
+  margin: 0 19px;
+  width: calc(25% - 38px);
+  padding-top: 52px;
+
+  text-align: center;
 }
