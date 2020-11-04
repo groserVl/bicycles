@@ -31,7 +31,8 @@
   @media ( max-width: 767px ) {
     HTML {
       /* Mobile layout */
-      background-image: url("pixel/mobile.jpg");
+      /* background-image: url("pixel/mobile.jpg"); */
+      background-image: url("pixel/menu.jpg");
     }
   }
 </style>
@@ -41,23 +42,23 @@
 <script src="../pixel/script.js"></script>
 </head>
 <body>
-  <header class="header">
-    <nav class="header__nav">
+  <header class="header header--nojs">
+    <nav class="header__nav header__nav--close ">
       <a class="header__logo logo">
         <img src="img/logo.svg" width="68" height="21" alt="Логотип интернет-магазина по продаже велосипедов: MOON">
       </a>
       <ul class="header__menu menu">
         <li class="menu__list-item">
-          <a class="menu__list-link" href="#">О нас</a>
+          <a class="menu__list-link" href="#about">О нас</a>
         </li>
         <li class="menu__list-item">
-          <a class="menu__list-link" href="#">Виды велосипедов</a>
+          <a class="menu__list-link" href="#kinds">Виды велосипедов</a>
         </li>
         <li class="menu__list-item">
-          <a class="menu__list-link" href="#">Видео про велосипеды</a>
+          <a class="menu__list-link" href="#video">Видео про велосипеды</a>
         </li>
         <li class="menu__list-item">
-          <a class="menu__list-link" href="#">Контакты</a>
+          <a class="menu__list-link" href="#contacts">Контакты</a>
         </li>
       </ul>
       <button class="header__toggle" type="button">
@@ -93,7 +94,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <h2 class="about__title">Несколько фактов о нас</h2>
       <ul class="about__list">
         <li class="about__item">
@@ -111,7 +112,7 @@
       </ul>
     </section>
 
-    <section class="kinds">
+    <section class="kinds" id="kinds">
       <h2 class="kinds__title">Виды велосипедов</h2>
       <div class="kinds__wrap-list">
         <ul class="kinds__list">
@@ -157,7 +158,7 @@
       </div>
     </section>
 
-    <!-- <section class="video">
+    <section class="video" id="video">
       <h2 class="video__title">Видео про велосипеды</h2>
       <p class="video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
       <div class="video__item video-content">
@@ -174,25 +175,25 @@
           <span class="visually-hidden">Включить видео</span>
         </button>
       </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="contacts">
+    <section class="contacts" id="contacts">
       <h2 class="contacts__title">Как нас найти?</h2>
       <p class="contacts__text">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
       <div class="contacts__wrap-img">
         <picture>
-          <source type="image/webp" media="(max-width: 767px)" srcset="img/map-mobile1x.webp 1x, img/map-mobile2x.webp 2x">
+          <source type="image/webp" media="(max-width: 400px)" srcset="img/map-mobile1x.webp 1x, img/map-mobile2x.webp 2x">
           <source type="image/webp" media="(max-width: 1023px)" srcset="img/map-tablet1x.webp 1x, img/map-tablet2x.webp 2x">
           <source type="image/webp" srcset="img/map-desktop1x.webp 1x, img/map-desktop2x.webp 2x">
 
-          <source media="(max-width: 767px)" srcset="img/map-mobile1x.jpg, img/map-mobile2x.jpg 2x">
+          <source media="(max-width: 400px)" srcset="img/map-mobile1x.jpg, img/map-mobile2x.jpg 2x">
           <source media="(max-width: 1023px)" srcset="img/map-tablet1x.jpg, img/map-tablet2x.jpg 2x">
           <img src="img/map-desktop1x.jpg" srcset="img/map-desktop2x.jpg 2x" alt="Карта нашего местонахождения">
         </picture>
       </div>
-    </section> -->
+    </section>
   </main>
-  <!-- <footer class="footer">
+  <footer class="footer">
     <div class="footer__wrap">
       <a class="footer__mail" href="mailto:puteshestviemechta@gmail.ru">
         <svg width="26" height="20" role="img" aria-label="Напишите нам на почту" fill="#0ad9c6">
@@ -205,7 +206,7 @@
         </svg>
         +7 (499) -784-684-46</a>
     </div>
-  </footer> -->
+  </footer>
 
 
   <script src="js/vendor.js"></script>

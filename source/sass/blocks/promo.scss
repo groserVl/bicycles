@@ -6,6 +6,10 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-color: #1e1e1e;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-promo2x.jpg");
+  }
 }
 
 .promo__wrap {
@@ -46,8 +50,11 @@
 
     background-image: url("../img/bg-promo-tablet1x.jpg");
     background-color: transparent;
-
     background-size: contain;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-promo-tablet2x.jpg");
+    }
   }
 
   .promo__wrap {
@@ -84,6 +91,7 @@
     padding-top: 120px;
     background-size: auto auto;
   }
+
   .promo__wrap-text {
     margin-bottom: 140px;
   }
@@ -93,5 +101,9 @@
   .promo {
     background-image: url("../img/bg-promo-mobile1x.jpg");
     background-size: 100% auto;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-promo-mobile2x.jpg");
+    }
   }
 }

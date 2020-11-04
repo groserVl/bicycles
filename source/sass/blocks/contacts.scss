@@ -52,3 +52,21 @@
     width: 91%;
   }
 }
+
+@media (max-width: 767px) {
+  .contacts {
+    padding-top: 62px;
+  }
+
+  .contacts__title {
+    font-size: 18px;
+  }
+
+  .contacts__wrap-img {
+    width: 100%;
+  }
+
+  .contacts__text {
+    padding: 0 25px;
+  }
+}

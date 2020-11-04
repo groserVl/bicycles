@@ -7,7 +7,7 @@
 .video__title {
   @include h2(20px);
 
-  width: 360px;
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
@@ -16,7 +16,7 @@
 }
 
 .video__text {
-  width: 340px;
+  max-width: 340px;
   margin: 0 auto 55px;
 
   font-weight: 300;
@@ -44,7 +44,23 @@
   }
 
   .video__text {
-    width: 430px;
+    max-width: 430px;
     margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .video {
+    padding-top: 85px;
+    // padding-left: 15px;
+    // padding-right: 15px;
+    padding-left: 4.7%;
+    padding-right: 4.7%;
+
+    background-image: linear-gradient(to bottom, #131314 87.3%, transparent 50px);
+  }
+
+  .video__text {
+    margin-bottom: 52px;
   }
 }

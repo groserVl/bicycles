@@ -1,6 +1,6 @@
 .video-content {
   position: relative;
-  width: 929px;
+  max-width: 929px;
 }
 
 .video-content img {
@@ -57,6 +57,30 @@
       border-left: 18px solid #070707;
       border-top: 13px solid transparent;
       border-bottom: 13px solid transparent;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .video-content {
+    width: auto;
+  }
+
+  .video-content__button {
+    width: 65px;
+    height: 65px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 30px;
+
+      border-left: 14px solid #070707;
+      border-top: 9px solid transparent;
+      border-bottom: 9px solid transparent;
+
+      transform: translateY(-50%);
     }
   }
 }

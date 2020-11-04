@@ -153,6 +153,10 @@
 }
 
 @media (max-width: 767px) {
+  .kinds {
+    padding-bottom: 15px;
+  }
+
   .kinds__wrap-list {
     // padding: 0 7.5%;
     padding: 0 15%;
@@ -162,7 +166,6 @@
     display: block;
     margin: 0;
     padding: 0;
-
   }
 
   .kinds__list .kinds__item {
