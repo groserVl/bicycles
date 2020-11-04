@@ -60,3 +60,13 @@
     padding: 9px 21px 13px;
   }
 }
+
+@media (max-width: 767px) {
+  .form {
+    width: 288px;
+  }
+
+  .form__title {
+    margin-bottom: 20px;
+  }
+}

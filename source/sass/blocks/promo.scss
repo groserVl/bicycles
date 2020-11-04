@@ -77,3 +77,21 @@
     margin: 19.5% auto 0;
   }
 }
+
+@media (max-width: 767px) {
+  .promo {
+    padding: 0 15px;
+    padding-top: 120px;
+    background-size: auto auto;
+  }
+  .promo__wrap-text {
+    margin-bottom: 140px;
+  }
+}
+
+@media (max-width: 360px) {
+  .promo {
+    background-image: url("../img/bg-promo-mobile1x.jpg");
+    background-size: 100% auto;
+  }
+}

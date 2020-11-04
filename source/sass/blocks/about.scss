@@ -61,3 +61,26 @@
     margin-right: auto;
   }
 }
+
+@media (max-width: 767px) {
+  .about__list {
+    display: block;
+    padding: 0 30px;
+  }
+
+  .about__title {
+    margin-bottom: 30px;
+  }
+
+  .about__item {
+    width: auto;
+  }
+
+  .about__item p {
+    max-width: auto;
+    margin: 0 auto 36px;
+
+    font-size: 18px;
+    letter-spacing: -0.5px;
+  }
+}

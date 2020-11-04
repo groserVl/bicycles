@@ -374,7 +374,6 @@ body {
 body {
   position: relative;
   max-width: 1440px;
-  min-width: 320px;
   margin: 0 auto;
   padding: 0;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -445,6 +444,10 @@ body {
       background-color: #000000;
       -webkit-box-shadow: 0 6px 0 0.1px #000000, 0 12px 0 0.1px #000000;
               box-shadow: 0 6px 0 0.1px #000000, 0 12px 0 0.1px #000000; } }
+
+@media (max-width: 767px) {
+  .header__logo {
+    padding-left: 18px; } }
 
 .menu {
   margin: 0;
@@ -530,6 +533,19 @@ body {
   .promo__wrap-form {
     margin: 19.5% auto 0; } }
 
+@media (max-width: 767px) {
+  .promo {
+    padding: 0 15px;
+    padding-top: 120px;
+    background-size: auto auto; }
+  .promo__wrap-text {
+    margin-bottom: 140px; } }
+
+@media (max-width: 360px) {
+  .promo {
+    background-image: url("../img/bg-promo-mobile1x.jpg");
+    background-size: 100% auto; } }
+
 .form {
   width: 327px; }
 
@@ -601,6 +617,12 @@ body {
   .form input {
     padding: 9px 21px 13px; } }
 
+@media (max-width: 767px) {
+  .form {
+    width: 288px; }
+  .form__title {
+    margin-bottom: 20px; } }
+
 .about {
   max-width: 1196px;
   margin-left: auto;
@@ -657,6 +679,20 @@ body {
     max-width: 263px;
     margin-left: auto;
     margin-right: auto; } }
+
+@media (max-width: 767px) {
+  .about__list {
+    display: block;
+    padding: 0 30px; }
+  .about__title {
+    margin-bottom: 30px; }
+  .about__item {
+    width: auto; }
+  .about__item p {
+    max-width: auto;
+    margin: 0 auto 36px;
+    font-size: 18px;
+    letter-spacing: -0.5px; } }
 
 .kinds {
   padding-top: 130px;
@@ -768,6 +804,28 @@ body {
     display: block;
     width: 100%;
     height: auto; } }
+
+@media (max-width: 767px) {
+  .kinds__wrap-list {
+    padding: 0 15%; }
+  .kinds__list {
+    display: block;
+    margin: 0;
+    padding: 0; }
+  .kinds__list .kinds__item {
+    width: auto;
+    margin: 0;
+    margin-bottom: 40px; }
+  .kinds__item:first-child::before {
+    top: 200px;
+    left: -25px; }
+  .kinds__item:nth-child(3)::before {
+    top: -19px;
+    right: -14px; } }
+
+@media (max-width: 576px) {
+  .kinds__wrap-list {
+    padding: 0 7.5%; } }
 
 .card h3 {
   margin: 0;

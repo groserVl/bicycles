@@ -151,3 +151,41 @@
     height: auto;
   }
 }
+
+@media (max-width: 767px) {
+  .kinds__wrap-list {
+    // padding: 0 7.5%;
+    padding: 0 15%;
+  }
+
+  .kinds__list {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .kinds__list .kinds__item {
+    width: auto;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  .kinds__item {
+    &:first-child::before {
+      top: 200px;
+      left: -25px;
+    }
+
+    &:nth-child(3)::before {
+      top: -19px;
+      right: -14px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .kinds__wrap-list {
+    padding: 0 7.5%;
+  }
+}
