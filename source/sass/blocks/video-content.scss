@@ -23,6 +23,15 @@
 
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    background-color: darken($green, 10%);
+  }
+
+  &:active {
+    background-color: lighten($green, 10%);
+  }
+
   &::before {
     content: "";
     position: absolute;

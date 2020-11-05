@@ -75,6 +75,15 @@
 
     cursor: pointer;
 
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
     &::before {
       content: "";
 
@@ -103,6 +112,15 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
 
     &::before,
     &::after {

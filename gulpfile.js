@@ -34,7 +34,7 @@ gulp.task("css", function () {
 });
 
 gulp.task("libraries", function() {
-  return gulp.src("source/js/lib/*.js")
+  return gulp.src("source/js/lib/picturefill.js")
     .pipe(concat('vendor.js'))
     .pipe(babel({
       presets: ['@babel/env']
@@ -111,7 +111,7 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    // "source/js/**",
+    "source/js/lib/svg4everybody.js",
     "source//*.ico"
     ], {
       base: "source"
