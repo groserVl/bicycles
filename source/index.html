@@ -10,36 +10,7 @@
   <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/OpenSans-Light.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
-  <!-- Pixel Glass -->
-<style>
-  HTML {
-    background-repeat: no-repeat;
-    background-position:  50% 0;
-    /* Desktop layout by default */
-    /* background-image: url("pixel/desktop.jpg"); */
-  }
-  /* Tablet */
-  /* @media ( max-width: 1023px ) { */
-  @media ( min-width: 768px) and (max-width: 1023px) {
-    HTML {
-      /* Tablet layout */
-      /* background-image: url("pixel/tablet.jpg"); */
-    }
-  }
-  /* Mobile */
-  /* @media ( max-width: 767px ) { */
-  @media ( max-width: 767px ) {
-    HTML {
-      /* Mobile layout */
-      background-image: url("pixel/mobile.jpg");
-      /* background-image: url("pixel/menu.jpg"); */
-    }
-  }
-</style>
 
-
-<link href="../pixel/styles.css" rel="stylesheet">
-<script src="../pixel/script.js"></script>
 </head>
 <body>
   <header class="header header--nojs">
@@ -80,12 +51,12 @@
           <form action="https://echo.htmlacademy.ru" method="post">
             <div class="form__row">
               <label class="visually-hidden" for="name">Ваше имя</label>
-              <input type="text" id="name" name="name" placeholder="Введите Ваше Имя" required>
+              <input type="text" id="name" name="name" placeholder="Введите Ваше Имя" pattern="^([A-Za-zА-Яа-яЁё]+\s?'?-?)+$" required>
             </div>
 
             <div class="form__row">
               <label class="visually-hidden" for="phone">Ваш номер телефона </label>
-              <input type="tel" id="phone" name="phone" placeholder="Введите Ваш номер телефона" required>
+              <input type="tel" id="phone" name="phone" placeholder="Введите Ваш номер телефона" pattern="\+7\s\([0-9]{3}\)\s\d{3}[-]\d{2}[-]\d{2}" required>
             </div>
 
             <button type="submit">Подобрать велосипед мечты</button>
@@ -208,11 +179,11 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
-  <script src="js/vendor.js"></script>
+  <script src="js/lib/i-mask.js"></script>
+  <script src="js/lib/picturefill.js"></script>
   <script src="js/lib/svg4everybody.js"></script>
   <script>svg4everybody();</script>
-
+  <script src="js/main.js"></script>
 
 </body>
 </html>
