@@ -1,6 +1,6 @@
 'use strict';
-
 (function () {
+
   var headerNav = document.querySelector('.header__nav');
   var toggleNav = document.querySelector('.header__toggle');
   var header = document.querySelector('.header');
@@ -19,22 +19,9 @@
         headerNav.classList.add('header__nav--close');
         headerNav.classList.remove('header__nav--open');
       }
-
       header.classList.toggle('header--static');
       logo.classList.toggle('logo--close');
     });
   }
-})();
 
-'use strict';
-
-(function () {
-  var inputTel = document.querySelector('input[type="tel"]');
-  var createMask = window.IMask;
-
-  if (inputTel) {
-    createMask(inputTel, {
-      mask: '+{7} (000) 000-00-00'
-    });
-  }
 })();

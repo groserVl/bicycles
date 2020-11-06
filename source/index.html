@@ -87,43 +87,46 @@
       <h2 class="kinds__title">Виды велосипедов</h2>
       <div class="kinds__wrap-list">
         <ul class="kinds__list">
-          <li class="kinds__item">
-            <article class="card">
+          <li class="kinds__item kinds__item--road">
+            <div class="card">
               <picture>
                 <source type="image/webp" media="(max-width: 1023px)" srcset="img/bicycle-1-tablet1x.webp 1x, img/bicycle-1-tablet2x.webp 2x">
                 <source type="image/webp" srcset="img/bicycle-1-desktop1x.webp 1x, img/bicycle-1-desktop2x.webp 2x">
 
                 <source media="(max-width: 1023px)" srcset="img/bicycle-1-tablet1x.png, img/bicycle-1-tablet2x.png 2x">
-                <img src="img/bicycle-1-desktop1x.png" srcset="img/bicycle-1-desktop2x.png 2x" alt="Дорожный велосипед">
+                <!-- 1x: 342px; 2x: 684px  -->
+                <img src="img/bicycle-1-desktop1x.png" srcset="img/bicycle-1-desktop2x.png 2x" width="342" height="503" alt="Дорожный велосипед">
               </picture>
               <h3>Дорожный велосипед</h3>
-            </article>
+            </div>
           </li>
 
-          <li class="kinds__item">
-            <article class="card">
+          <li class="kinds__item kinds__item--mountain">
+            <div class="card">
               <picture>
                 <source type="image/webp" media="(max-width: 1023px)" srcset="img/bicycle-2-tablet1x.webp 1x, img/bicycle-2-tablet2x.webp 2x">
                 <source type="image/webp" srcset="img/bicycle-2-desktop1x.webp 1x, img/bicycle-2-desktop2x.webp 2x">
 
                 <source media="(max-width: 1023px)" srcset="img/bicycle-2-tablet1x.png, img/bicycle-2-tablet2x.png 2x">
-                <img src="img/bicycle-2-desktop1x.png" srcset="img/bicycle-2-desktop2x.png 2x" alt="Горный велосипед">
+                <!-- 1x: 342px; 2x: 684px  -->
+                <img src="img/bicycle-2-desktop1x.png" srcset="img/bicycle-2-desktop2x.png 2x" width="342" height="566" alt="Горный велосипед">
               </picture>
               <h3>Горный велосипед</h3>
-            </article>
+            </div>
           </li>
 
-          <li class="kinds__item">
-            <article class="card">
+          <li class="kinds__item kinds__item--childlike">
+            <div class="card">
               <picture>
                 <source type="image/webp" media="(max-width: 1023px)" srcset="img/bicycle-3-tablet1x.webp 1x, img/bicycle-3-tablet2x.webp 2x">
                 <source type="image/webp" srcset="img/bicycle-3-desktop1x.webp 1x, img/bicycle-3-desktop2x.webp 2x">
 
                 <source media="(max-width: 1023px)" srcset="img/bicycle-3-tablet1x.png, img/bicycle-3-tablet2x.png 2x">
-                <img src="img/bicycle-3-desktop1x.png" srcset="img/bicycle-3-desktop2x.png 2x" alt="Детский велосипед">
+                <!-- 1x: 342px; 2x: 684px  -->
+                <img src="img/bicycle-3-desktop1x.png" srcset="img/bicycle-3-desktop2x.png 2x" width="342" height="513" alt="Детский велосипед">
               </picture>
               <h3>Детский велосипед</h3>
-            </article>
+            </div>
           </li>
         </ul>
       </div>
@@ -140,7 +143,8 @@
 
           <source media="(max-width: 767px)" srcset="img/video-mobile1x.jpg, img/video-mobile2x.jpg 2x">
           <source media="(max-width: 1023px)" srcset="img/video-tablet1x.jpg, img/video-tablet2x.jpg 2x">
-          <img src="img/video-desktop1x.jpg" srcset="img/video-desktop2x.jpg 2x" alt="Видеозаставка про велосипеды">
+          <!-- 1x: 929px; 2x: 1858px  -->
+          <img src="img/video-desktop1x.jpg" srcset="img/video-desktop2x.jpg 2x" width="929" height="522" alt="Видеозаставка про велосипеды">
         </picture>
         <button class="video-content__button" type="button">
           <span class="visually-hidden">Включить видео</span>
@@ -159,7 +163,8 @@
 
           <source media="(max-width: 400px)" srcset="img/map-mobile1x.jpg, img/map-mobile2x.jpg 2x">
           <source media="(max-width: 1023px)" srcset="img/map-tablet1x.jpg, img/map-tablet2x.jpg 2x">
-          <img src="img/map-desktop1x.jpg" srcset="img/map-desktop2x.jpg 2x" alt="Карта нашего местонахождения">
+          <!-- 1x: 957px; 2x: 1914px  -->
+          <img src="img/map-desktop1x.jpg" srcset="img/map-desktop2x.jpg 2x" width="957" height="530" alt="Карта нашего местонахождения">
         </picture>
       </div>
     </section>
@@ -179,9 +184,7 @@
     </div>
   </footer>
 
-  <script src="js/lib/i-mask.js"></script>
-  <script src="js/lib/picturefill.js"></script>
-  <script src="js/lib/svg4everybody.js"></script>
+  <script src="js/vendor.js"></script>
   <script>svg4everybody();</script>
   <script src="js/main.js"></script>
 

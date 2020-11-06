@@ -36,9 +36,6 @@ gulp.task("css", function () {
 gulp.task("libraries", function() {
   return gulp.src("source/js/lib/*.js")
     .pipe(concat('vendor.js'))
-    .pipe(babel({
-      presets: ['@babel/env']
-    }))
     .pipe(gulp.dest('./build/js'))
     .pipe(server.stream());
 });
@@ -111,7 +108,7 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/lib/*.js",
+    // "source/js/lib/*.js",
     "source//*.ico"
     ], {
       base: "source"
