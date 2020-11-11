@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-color: #1e1e1e;
+  background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-promo2x.jpg");

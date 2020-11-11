@@ -563,7 +563,8 @@ body {
   background-image: url("../img/bg-promo1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-color: #1e1e1e; }
+  background-color: #1e1e1e;
+  background-size: cover; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .promo {
       background-image: url("../img/bg-promo2x.jpg"); } }
@@ -662,31 +663,31 @@ body {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: rgba(28, 28, 28, 0.5); }
+  color: red; }
 
 .form input::-moz-placeholder {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: rgba(28, 28, 28, 0.5); }
+  color: red; }
 
 .form input:-ms-input-placeholder {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: rgba(28, 28, 28, 0.5); }
+  color: red; }
 
 .form input::-ms-input-placeholder {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: rgba(28, 28, 28, 0.5); }
+  color: red; }
 
 .form input::placeholder {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: rgba(28, 28, 28, 0.5); }
+  color: red; }
 
 .form button {
   width: 100%;
@@ -698,7 +699,8 @@ body {
   background: none;
   border: none;
   background-color: #0ad9c6;
-  border-radius: 6px; }
+  border-radius: 6px;
+  cursor: pointer; }
 
 @media (max-width: 1023px) {
   .form {

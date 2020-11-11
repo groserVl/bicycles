@@ -25,7 +25,8 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: rgba(#1c1c1c, 0.5);
+  // color: rgba(#1c1c1c, 0.5);
+  color: red;
 }
 
 .form button {
@@ -41,6 +42,8 @@
   border: none;
   background-color: $green;
   border-radius: 6px;
+
+  cursor: pointer;
 }
 
 @media (max-width: $tablet-width) {
