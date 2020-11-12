@@ -58,11 +58,15 @@
 
     font-size: 18px;
     color: $text;
-    letter-spacing: -0.3px;
+    letter-spacing: -0.1px;
   }
 
   .form input {
-    padding: 9px 21px 13px;
+    padding: 10px 21px 13px;
+  }
+
+  .form button {
+    padding-top: 16px;
   }
 }
 

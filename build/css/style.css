@@ -602,7 +602,7 @@ body {
 
 @media (max-width: 1023px) {
   .promo {
-    padding-top: 12%;
+    padding-top: 17.5%;
     padding-bottom: 0;
     background-image: url("../img/bg-promo-tablet1x.jpg");
     background-color: transparent;
@@ -720,9 +720,11 @@ body {
     margin-bottom: 30px;
     font-size: 18px;
     color: #000000;
-    letter-spacing: -0.3px; }
+    letter-spacing: -0.1px; }
   .form input {
-    padding: 9px 21px 13px; } }
+    padding: 10px 21px 13px; }
+  .form button {
+    padding-top: 16px; } }
 
 @media (max-width: 767px) {
   .form {
@@ -785,13 +787,13 @@ body {
 @media (max-width: 1023px) {
   .about {
     padding-top: 68px;
-    padding-bottom: 45px; }
+    padding-bottom: 32px; }
   .about__title {
     margin-bottom: 30px;
     font-size: 24px;
     line-height: 41px; }
   .about__list {
-    padding: 0 100px;
+    padding: 0 105px;
     margin-left: -15px;
     margin-right: -15px; }
   .about__item {
@@ -803,7 +805,8 @@ body {
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0; } }
+    padding: 0;
+    letter-spacing: -0.5px; } }
 
 @media (max-width: 767px) {
   .about {
@@ -904,7 +907,7 @@ body {
 
 @media (max-width: 1023px) {
   .kinds {
-    padding-top: 33px;
+    padding-top: 48px;
     padding-bottom: 20px; }
   .kinds__title {
     margin-bottom: 30px;
@@ -1008,11 +1011,12 @@ body {
     padding-top: 70px;
     background-image: linear-gradient(to bottom, #131314 413px, transparent 85px); }
   .video__title {
+    margin-bottom: 20px;
     font-size: 24px;
     text-align: center; }
   .video__text {
     max-width: 430px;
-    margin-bottom: 40px; } }
+    margin-bottom: 39px; } }
 
 @media (max-width: 767px) {
   .video {
@@ -1060,7 +1064,7 @@ body {
 
 @media (max-width: 1023px) {
   .video-content {
-    width: 64%; }
+    width: 65.5%; }
   .video-content__button {
     width: 90px;
     height: 90px; }
@@ -1126,13 +1130,15 @@ body {
 
 @media (max-width: 1023px) {
   .contacts {
-    padding-top: 70px; }
+    padding-top: 63px; }
   .contacts__title {
     margin-bottom: 20px;
+    padding: 0;
     font-size: 24px; }
   .contacts__text {
     width: auto;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    padding: 0; }
   .contacts__wrap-img {
     width: 91%; } }
 
@@ -1195,7 +1201,7 @@ body {
 
 @media (max-width: 1023px) {
   .footer {
-    padding-top: 23px;
+    padding-top: 21px;
     padding-bottom: 50px; }
   .footer__phone {
     margin-right: 12px; } }

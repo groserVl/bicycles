@@ -35,11 +35,12 @@
 
 @media (max-width: $tablet-width) {
   .contacts {
-    padding-top: 70px;
+    padding-top: 63px;
   }
 
   .contacts__title {
     margin-bottom: 20px;
+    padding: 0;
 
     font-size: 24px;
   }
@@ -47,6 +48,7 @@
   .contacts__text {
     width: auto;
     margin-bottom: 20px;
+    padding: 0;
   }
 
   .contacts__wrap-img {
