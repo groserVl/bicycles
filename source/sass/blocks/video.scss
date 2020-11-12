@@ -64,3 +64,19 @@
     margin-bottom: 52px;
   }
 }
+
+@media (max-width: $extra-small-width) {
+  .video {
+    padding-top: 82px;
+  }
+
+  .video__title {
+    padding-right: 8px;
+
+    letter-spacing: -0.2px;
+  }
+
+  .video__text {
+    margin-bottom: 50px;
+  }
+}

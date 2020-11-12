@@ -47,7 +47,6 @@
 @media (max-width: $tablet-width) {
   .promo {
     padding-top: 17.5%;
-    // padding-top: 12%;
     padding-bottom: 0;
 
     background-image: url("../img/bg-promo-tablet1x.jpg");
@@ -91,9 +90,17 @@
   .promo__wrap-text {
     margin-bottom: 140px;
   }
+
+  .promo {
+    padding-top: 15%;
+  }
+
+  .promo__title {
+    margin-bottom: 4%;
+  }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 430px) {
   .promo {
     padding: 0 15px;
     padding-top: 120px;
@@ -112,8 +119,12 @@
   }
 }
 
-@media (max-width: 370px) {
+@media (max-width: $extra-small-width) {
   .promo__wrap-text {
     margin-bottom: 48%;
+  }
+
+  .promo__title {
+    margin-bottom: 7%;
   }
 }

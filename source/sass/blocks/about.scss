@@ -121,3 +121,19 @@
     letter-spacing: -0.5px;
   }
 }
+
+@media (max-width: $extra-small-width) {
+  .about {
+    padding-top: 72px;
+    padding-bottom: 43px;
+  }
+
+  .about__title {
+    margin-bottom: 30px;
+  }
+
+  .about__item p {
+    margin-top: 14px;
+    margin-bottom: 38px;
+  }
+}

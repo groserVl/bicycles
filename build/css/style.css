@@ -630,25 +630,31 @@ body {
 
 @media (max-width: 767px) {
   .promo__wrap-text {
-    margin-bottom: 140px; } }
+    margin-bottom: 140px; }
+  .promo {
+    padding-top: 15%; }
+  .promo__title {
+    margin-bottom: 4%; } }
 
-@media (max-width: 460px) {
+@media (max-width: 430px) {
   .promo {
     padding: 0 15px;
     padding-top: 120px;
     background-image: url("../img/bg-promo-mobile1x.jpg");
     background-size: 100% auto; } }
-  @media (max-width: 460px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 460px) and (min-resolution: 144dpi), (max-width: 460px) and (min-resolution: 1.5dppx) {
+  @media (max-width: 430px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 430px) and (min-resolution: 144dpi), (max-width: 430px) and (min-resolution: 1.5dppx) {
     .promo {
       background-image: url("../img/bg-promo-mobile2x.jpg"); } }
 
-@media (max-width: 460px) {
+@media (max-width: 430px) {
   .promo__wrap-text {
     margin-bottom: 70%; } }
 
 @media (max-width: 370px) {
   .promo__wrap-text {
-    margin-bottom: 48%; } }
+    margin-bottom: 48%; }
+  .promo__title {
+    margin-bottom: 7%; } }
 
 .form {
   width: 327px; }
@@ -733,6 +739,10 @@ body {
     margin-bottom: 20px; }
   .form button {
     padding-top: 14px; } }
+
+@media (max-width: 370px) {
+  .form input {
+    padding: 12px 25px 11px; } }
 
 .about {
   max-width: 1196px;
@@ -824,6 +834,16 @@ body {
     margin: 0 auto 36px;
     font-size: 18px;
     letter-spacing: -0.5px; } }
+
+@media (max-width: 370px) {
+  .about {
+    padding-top: 72px;
+    padding-bottom: 43px; }
+  .about__title {
+    margin-bottom: 30px; }
+  .about__item p {
+    margin-top: 14px;
+    margin-bottom: 38px; } }
 
 .kinds {
   padding-top: 152px;
@@ -1027,6 +1047,15 @@ body {
   .video__text {
     margin-bottom: 52px; } }
 
+@media (max-width: 370px) {
+  .video {
+    padding-top: 82px; }
+  .video__title {
+    padding-right: 8px;
+    letter-spacing: -0.2px; }
+  .video__text {
+    margin-bottom: 50px; } }
+
 .video-content {
   position: relative;
   width: 64.56%; }
@@ -1152,6 +1181,10 @@ body {
   .contacts__text {
     padding: 0 25px; } }
 
+@media (max-width: 370px) {
+  .contacts {
+    padding-top: 63px; } }
+
 .footer {
   max-width: 1166px;
   margin: 0 auto;
@@ -1221,3 +1254,7 @@ body {
     width: 195px;
     margin: 0 auto;
     margin-top: 22px; } }
+
+@media (max-width: 370px) {
+  .footer__phone {
+    width: 210px; } }

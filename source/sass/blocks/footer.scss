@@ -82,3 +82,9 @@
     margin-top: 22px;
   }
 }
+
+@media (max-width: $extra-small-width) {
+  .footer__phone {
+    width: 210px;
+  }
+}

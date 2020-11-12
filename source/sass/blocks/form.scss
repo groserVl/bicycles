@@ -83,3 +83,9 @@
     padding-top: 14px;
   }
 }
+
+@media (max-width: $extra-small-width) {
+  .form input {
+    padding: 12px 25px 11px;
+  }
+}
