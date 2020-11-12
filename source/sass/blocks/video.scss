@@ -1,11 +1,11 @@
 .video {
   padding-top: 122px;
 
-  background-image: linear-gradient(to bottom, #131314 706px, transparent 100px);
+  background-image: linear-gradient(to bottom, #131314 84%, transparent 100px);
 }
 
 .video__title {
-  @include h2(20px);
+  @include h2(18px);
 
   max-width: 360px;
   margin-left: auto;

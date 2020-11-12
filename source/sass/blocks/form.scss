@@ -15,7 +15,10 @@
 .form input {
   width: 100%;
   margin-bottom: 19px;
-  padding: 11px 28px 10px;
+  padding: 13px 28px 10px;
+
+  font-size: 15px;
+  line-height: 24px;
 
   border: 1px solid #c9ccd4;
   border-radius: 4px;
@@ -25,8 +28,7 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  // color: rgba(#1c1c1c, 0.5);
-  color: red;
+  color: rgba(#1c1c1c, 0.5);
 }
 
 .form button {
@@ -71,5 +73,9 @@
 
   .form__title {
     margin-bottom: 20px;
+  }
+
+  .form button {
+    padding-top: 14px;
   }
 }

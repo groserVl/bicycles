@@ -28,6 +28,12 @@
   display: none;
 }
 
+@media (max-width: 1300px) {
+  .header__logo {
+    top: 240px;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .header {
     padding: 0;

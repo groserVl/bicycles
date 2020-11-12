@@ -1,19 +1,20 @@
 .contacts {
-  padding-top: 145px;
+  padding-top: 146px;
 }
 
 .contacts__title {
   @include h2(30px);
 
-  width: 235px;
+  width: 240px;
   margin-left: auto;
   margin-right: auto;
+  padding-right: 10px;
 }
 
 .contacts__text {
-
   width: 555px;
   margin: 0 auto 40px;
+  padding-right: 15px;
 
   font-size: 17px;
   line-height: 31px;
