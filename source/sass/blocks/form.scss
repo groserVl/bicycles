@@ -46,6 +46,16 @@
   border-radius: 6px;
 
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: lighten($text, 60%);
+    background-color: lighten($green, 30%);
+  }
+
+  &:active {
+    background-color: darken($green, 30%);
+  }
 }
 
 @media (max-width: $tablet-width) {
