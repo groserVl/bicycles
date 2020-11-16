@@ -1194,7 +1194,7 @@ body {
   max-width: 1166px;
   margin: 0 auto;
   padding-top: 39px;
-  padding-bottom: 95px; }
+  padding-bottom: 75px; }
 
 .footer__wrap {
   display: -webkit-box;
@@ -1241,7 +1241,7 @@ body {
 @media (max-width: 1023px) {
   .footer {
     padding-top: 21px;
-    padding-bottom: 50px; }
+    padding-bottom: 30px; }
   .footer__phone {
     margin-right: 12px; } }
 
